@@ -1,0 +1,34 @@
+一 
+	1、创建新环境 
+		conda create -n env_name(自定义名称 如 py27hx) python=2.7(2.7版本)
+	2、进入该环境 
+		activate env_name
+	3、新加一个kernel
+		pip install ipykernel
+		python -m ipkernel install --name Py27hx（自定义kernel名）
+		kernel 地址 C:\ProgramData\jupyter\kernels
+	4、关闭python27环境
+		deactivate
+二、几个重要的工具
+	1、import numpy as np
+	2、import scipy
+	3、import pandas as pd
+	4、import sklearn
+	深度学习
+	5、import keras.backend as k
+	6、import tensorflow as tf
+三、矩阵运算
+	1、	numpy定义了python进行矩阵数值计算的基础
+		np.add（A,B)   /*矩阵加*/
+		np.subtract(A,B) /*矩阵减*/
+		np.dot(C,D)
+		np.matmul(C,D)##C@D
+		np.multiply(C,D)##C*D
+	2、np.dot和np.matmul的区别
+		1、都是矩阵乘法
+		2、np.matmul,禁止矩阵与标量乘法
+		3、np.matmul，在矢量乘矢量的内积运算中，matmul与dot没有差别
+		4、np.matmul，多维矩阵，将前n-2维视为后2维的元素后，进行乘法操作
+四、安装tensorflow与keras
+	1、先创建python3.5环境
+		
